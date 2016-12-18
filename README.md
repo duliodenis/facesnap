@@ -1,7 +1,7 @@
 # FaceSnap
 An iOS 10 / Swift 3 based Selfie App designed to help users take and manage their selfies through Core Data. 
 
-![](art/screenshot/facesnap00.gif?raw=true)
+![](art/screenshot/facesnap01.gif?raw=true)
 
 All UI is programmatically implemented with no Interface Builder. 
 
