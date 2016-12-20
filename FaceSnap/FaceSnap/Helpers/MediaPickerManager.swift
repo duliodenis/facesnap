@@ -9,10 +9,18 @@
 import UIKit
 import MobileCoreServices
 
+// protocol restricted to classes only in order to allow weak reference
+protocol MediaPickerManagerDelegate: class {
+    func mediaPickerManager(manager: MediaPickerManager, didFinishPickingImage image: UIImage)
+}
+
+
 class MediaPickerManager: NSObject {
     
     private let imagePickerController = UIImagePickerController()
     private let presentingViewController: UIViewController
+    
+    weak var delegate: MediaPickerManagerDelegate?
     
     init(presentingViewController: UIViewController) {
         self.presentingViewController = presentingViewController
@@ -39,6 +47,16 @@ class MediaPickerManager: NSObject {
     
     func dismissImagePickerController(animated animated: Bool, completion: (()->Void)) {
         imagePickerController.dismissViewControllerAnimated(animated, completion: completion)
+    }
+    
+}
+
+
+extension MediaPickerManager: UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+        delegate?.mediaPickerManager(self, didFinishPickingImage: image)
     }
     
 }

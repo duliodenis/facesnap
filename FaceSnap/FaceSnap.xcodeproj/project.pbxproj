@@ -35,6 +35,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C3CBFE21E074D5C00E83D60 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6C6F4A7B1E063F3D00EB6CEF /* PhotoListController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		6C3CBFE31E074D6600E83D60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6C3CBFE41E074D7400E83D60 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C6F4A721E063D7800EB6CEF /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		6C3CBFE51E074D8200E83D60 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				6C3CBFE01E072D8300E83D60 /* MediaPickerManager.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		6C3CBFE61E074DBF00E83D60 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				6C6F4A751E063D7800EB6CEF /* Info.plist */,
+				6C6F4A691E063D7800EB6CEF /* AppDelegate.swift */,
+			);
+			name = Infrastructure;
+			sourceTree = "<group>";
+		};
 		6C6F4A5D1E063D7800EB6CEF = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +94,12 @@
 		6C6F4A681E063D7800EB6CEF /* FaceSnap */ = {
 			isa = PBXGroup;
 			children = (
-				6C6F4A691E063D7800EB6CEF /* AppDelegate.swift */,
-				6C6F4A7B1E063F3D00EB6CEF /* PhotoListController.swift */,
-				6C3CBFE01E072D8300E83D60 /* MediaPickerManager.swift */,
+				6C3CBFE61E074DBF00E83D60 /* Infrastructure */,
+				6C3CBFE31E074D6600E83D60 /* Model */,
+				6C3CBFE41E074D7400E83D60 /* View */,
+				6C3CBFE21E074D5C00E83D60 /* Controller */,
+				6C3CBFE51E074D8200E83D60 /* Helper */,
 				6C6F4A701E063D7800EB6CEF /* Assets.xcassets */,
-				6C6F4A721E063D7800EB6CEF /* LaunchScreen.storyboard */,
-				6C6F4A751E063D7800EB6CEF /* Info.plist */,
 			);
 			path = FaceSnap;
 			sourceTree = "<group>";
