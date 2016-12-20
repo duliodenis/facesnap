@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6C3CBFE11E072D8300E83D60 /* MediaPickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3CBFE01E072D8300E83D60 /* MediaPickerManager.swift */; };
+		6C3CBFE81E09F97400E83D60 /* PhotoFilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3CBFE71E09F97400E83D60 /* PhotoFilterController.swift */; };
 		6C6F4A6A1E063D7800EB6CEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6F4A691E063D7800EB6CEF /* AppDelegate.swift */; };
 		6C6F4A711E063D7800EB6CEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C6F4A701E063D7800EB6CEF /* Assets.xcassets */; };
 		6C6F4A741E063D7800EB6CEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C6F4A721E063D7800EB6CEF /* LaunchScreen.storyboard */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		6C3CBFE01E072D8300E83D60 /* MediaPickerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MediaPickerManager.swift; path = Helpers/MediaPickerManager.swift; sourceTree = "<group>"; };
+		6C3CBFE71E09F97400E83D60 /* PhotoFilterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoFilterController.swift; path = Controllers/PhotoFilterController.swift; sourceTree = "<group>"; };
 		6C6F4A661E063D7800EB6CEF /* FaceSnap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceSnap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C6F4A691E063D7800EB6CEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C6F4A701E063D7800EB6CEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,6 +41,7 @@
 			isa = PBXGroup;
 			children = (
 				6C6F4A7B1E063F3D00EB6CEF /* PhotoListController.swift */,
+				6C3CBFE71E09F97400E83D60 /* PhotoFilterController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 			files = (
 				6C3CBFE11E072D8300E83D60 /* MediaPickerManager.swift in Sources */,
 				6C6F4A7C1E063F3D00EB6CEF /* PhotoListController.swift in Sources */,
+				6C3CBFE81E09F97400E83D60 /* PhotoFilterController.swift in Sources */,
 				6C6F4A6A1E063D7800EB6CEF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
